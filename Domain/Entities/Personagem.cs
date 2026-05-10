@@ -1,3 +1,5 @@
+namespace NewbieDragon.Domain.Entities;
+
 public abstract class Personagem
 {
     public string Nome = "";

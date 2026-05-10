@@ -1,3 +1,5 @@
+namespace NewbieDragon.Domain.Entities;
+
 class Ladrao : Personagem
 {
     public override int CalcularPV()
