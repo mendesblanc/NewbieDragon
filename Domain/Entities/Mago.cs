@@ -17,7 +17,7 @@ public class Mago : Personagem
     public override int CalcularPV()
     {
         Random dado = new Random();
-        int rolagem = dado.Next(1, 5);
+        int rolagem = dado.Next(1, 6);
         return Math.Max(1, rolagem + Constituicao.CalcularModificador());
     }
 }
