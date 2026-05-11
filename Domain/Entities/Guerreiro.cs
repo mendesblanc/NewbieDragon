@@ -17,7 +17,7 @@ public class Guerreiro : Personagem
     public override int CalcularPV()
     {
         Random dado = new Random();
-        int rolagem = dado.Next(1, 10);
+        int rolagem = dado.Next(1, 11);
         return Math.Max(1, rolagem + Constituicao.CalcularModificador());
     }
 }

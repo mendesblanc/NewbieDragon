@@ -17,7 +17,7 @@ public class Ladrao : Personagem
     public override int CalcularPV()
     {
         Random dado = new Random();
-        int rolagem = dado.Next(1, 7);
+        int rolagem = dado.Next(1, 8);
         return Math.Max(1, rolagem + Constituicao.CalcularModificador());
     }
 }
