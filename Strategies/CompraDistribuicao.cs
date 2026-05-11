@@ -1,7 +1,7 @@
 namespace NewbieDragon.Strategies;
 
 // Jogador recebe pontos para distribuir livremente entre os atributos
-public class CompraDistribuicao : IDristribuicaoStrategy
+public class CompraDistribuicao : IDistribuicaoStrategy
 {
     public string Nome => "Compra de Pontos";
 

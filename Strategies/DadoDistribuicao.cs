@@ -1,7 +1,7 @@
 namespace NewbieDragon.Strategies;
 
 // Rola 3d6 para cada atributo e o jogador escolhe onde colocar cada valor
-public class DadoDistribuicao : IDristribuicaoStrategy
+public class DadoDistribuicao : IDistribuicaoStrategy
 {
     public string Nome => "Dados (3d6)";
 
