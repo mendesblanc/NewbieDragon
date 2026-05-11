@@ -1,6 +1,6 @@
 namespace NewbieDragon.Strategies;
 
-public interface IDristribuicaoStrategy
+public interface IDistribuicaoStrategy 
 {
     string Nome { get; }
     int[] Distribuir();

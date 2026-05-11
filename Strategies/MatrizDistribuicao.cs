@@ -1,7 +1,7 @@
 namespace NewbieDragon.Strategies;
 
 // Conjunto fixo de valores: o jogador escolhe onde colocar cada um
-public class MatrizDistribuicao : IDristribuicaoStrategy
+public class MatrizDistribuicao : IDistribuicaoStrategy
 {
     public string Nome => "Matriz (valores fixos)";
 
