@@ -9,7 +9,6 @@ public abstract class Personagem
     public int JogadaDeProtecao;
     public List<string> Habilidades = new List<string>();
 
-    // Atributos usando a classe Atributo
     public Atributo Forca = new Atributo("Forca", 10);
     public Atributo Destreza = new Atributo("Destreza", 10);
     public Atributo Constituicao = new Atributo("Constituicao", 10);
@@ -17,10 +16,8 @@ public abstract class Personagem
     public Atributo Sabedoria = new Atributo("Sabedoria", 10);
     public Atributo Carisma = new Atributo("Carisma", 10);
 
-    // Cada classe filha calcula PV usando seu dado de vida + mod de CON
     public abstract int CalcularPV();
 
-    // Recebe os valores da Strategy e aplica nos atributos
     public void AplicarAtributos(int[] valores)
     {
         Forca.Valor = Math.Clamp(valores[0], 3, 18);

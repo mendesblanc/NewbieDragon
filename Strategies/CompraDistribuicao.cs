@@ -1,6 +1,5 @@
 namespace NewbieDragon.Strategies;
 
-// Jogador recebe pontos para distribuir livremente entre os atributos
 public class CompraDistribuicao : IDistribuicaoStrategy
 {
     public string Nome => "Compra de Pontos";
@@ -22,28 +21,24 @@ public class CompraDistribuicao : IDistribuicaoStrategy
             {
                 string digitado = Console.ReadLine() ?? "";
 
-                // Caso 1: digitou letra em vez de número
                 if (!int.TryParse(digitado, out int gasto))
                 {
                     Console.Write("Digite apenas números: ");
                     continue;
                 }
 
-                // Caso 2: tentou gastar mais do que tem
                 if (gasto > pontosRestantes)
                 {
                     Console.Write($"Você só tem {pontosRestantes} pontos! Tente novamente: ");
                     continue;
                 }
 
-                // Caso 3: número negativo
                 if (gasto < 0)
                 {
                     Console.Write("Digite um valor positivo: ");
                     continue;
                 }
 
-                // Atributo começa em 8, jogador soma os pontos gastos
                 resultado[i] = 8 + gasto;
                 pontosRestantes -= gasto;
                 break;

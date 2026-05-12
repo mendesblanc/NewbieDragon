@@ -8,7 +8,6 @@ public class Atributo
     public Atributo(string nome, int valor)
     {
         Nome = nome;
-        // Impede valores menores que 3 ou maiores que 18
         Valor = Math.Clamp(valor, 3, 18);
     }
 

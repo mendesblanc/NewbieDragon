@@ -5,7 +5,7 @@ using NewbieDragon.Domain.ValueObjects;
 
 public static class FormatadorFicha
 {
-    private const int Largura = 54; // Controla o tamanho horizontal da ficha impressa no console.
+    private const int Largura = 54;
 
     public static void Exibir(Personagem personagem, int pontosDeVida)
     {
